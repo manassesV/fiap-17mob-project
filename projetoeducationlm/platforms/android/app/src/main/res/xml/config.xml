@@ -21,4 +21,8 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="FirebaseAuthentication">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin" />
+        <param name="onload" value="false" />
+    </feature>
 </widget>
