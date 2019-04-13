@@ -60,14 +60,18 @@
                                 <div class="input-field col s11">
                                         <input placeholder="Email" id="first_name" type="text"
                                          class="validate" type="email">
+                                         
+                                         <label class="col s11" id="lbemail"></label>
                                       </div>
                                       <div class="input-field col s11">
                                         <input placeholder="Senha" id="last_name" type="text" 
                                         class="validate" type="password">
+                                        <label class="col s11" id="lbpassword"></label>
                                    </div>
                               </div>
                             <div class="card-action">
-                                    <a class="waves-effect waves-light btn col s8" id="login"><i class="material-icons right"></i>Acessar</a>
+                                    <a class="waves-effect waves-light btn col s8" id="login">
+                                        <i class="material-icons right"></i>Acessar</a>
                             </div>
                           </div>
                         </div>
@@ -77,18 +81,25 @@
           <script src="js/index.js"></script>
           <script src="js/login.js"></script>
           <script src="js/materialize.min.js"></script>
-          <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-          <script>
-                // Initialize Firebase
-                var config = {
-                  apiKey: "AIzaSyBqYDl9R3OOBMUAqfnPcqz6uILztYUWY8k",
-                  authDomain: "project-f2368.firebaseapp.com",
-                  databaseURL: "https://project-f2368.firebaseio.com",
-                  projectId: "project-f2368",
-                  storageBucket: "project-f2368.appspot.com",
-                  messagingSenderId: "582357917478"
-                };
-                firebase.initializeApp(config);
-              </script>
+             <!-- Firebase App is always required and must be first -->
+            <script src="js/firebase-app.js"></script>
+
+            <!-- Add additional services that you want to use -->
+            <script src="js/firebase-auth.js"></script>
+            <script>
+                    // Initialize Firebase
+                    var config = {
+                    apiKey: "AIzaSyBqYDl9R3OOBMUAqfnPcqz6uILztYUWY8k",
+                    authDomain: "project-f2368.firebaseapp.com",
+                    databaseURL: "https://project-f2368.firebaseio.com",
+                    projectId: "project-f2368",
+                    storageBucket: "project-f2368.appspot.com",
+                    messagingSenderId: "582357917478"
+                    };
+                    var defaultApp = firebase.initializeApp(config);
+                    console.log(defaultApp.name);  // "[DEFAULT]"
+            </script>
+
+
 
         </html>
