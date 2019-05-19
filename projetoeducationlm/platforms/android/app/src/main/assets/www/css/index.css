@@ -399,3 +399,11 @@ nav {
 a{
     color:#fff;
 }
+
+#images {
+  background-image: url("../img/imc.jpg");
+  background-color: #cccccc;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

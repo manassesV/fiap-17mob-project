@@ -33,7 +33,6 @@ if (login != null) {
     login.addEventListener('click', function () {
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
-        console.log(email)
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(function (firebaseUser) {
                 window.location = "principal.html" 
@@ -53,11 +52,16 @@ if (login != null) {
 }
 
 if (cadastraruser != null) {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+
+
     cadastraruser.addEventListener('click', function () {
+        var email = document.getElementById("emails").value;
+        var password = document.getElementById("password").value;
+    
         firebase.auth().createUserWithEmailAndPassword(email, password) .then(function (firebaseUser) {
-            window.location = "principal.html" 
+            alert("Usuário cadastrado com sucesso!");
+
+            window.location = "index.html" 
         })
         .catch(function (error) {
             // Handle Errors here.
@@ -74,12 +78,3 @@ if (cadastraruser != null) {
 }
 
 
-if (sair != null) {
-    sair.addEventListener('click', function () {
-        firebase.auth().signOut().then(function() {
-            window.location = "index.html";
-          }).catch(function(error) {
-            alert(error);
-          });
-    });
-}
