@@ -13,7 +13,15 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		F6C61A23B4A647EDB801683A /* FirebaseAuthenticationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 61563F04B3B6461AAEFCB8C3 /* FirebaseAuthenticationPlugin.m */; };
+		825FF5EC8DBC46ADBA57D0DB /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DB102185846DF89661772 /* CDVNotification.m */; };
+		DE30F637DB934185A90A2C71 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5757C28C379A4BB79BBE2F81 /* CDVNotification.bundle */; };
+		E8D7B754B95D44A8BE625FB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDAECE152444CA686E17E51 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B55BA1560A554ABB8AFE83BC /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70433A1A25483CB4A8030E /* UIImage+CropScaleOrientation.m */; };
+		C4C7E4940E4149B3A0E530FE /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D3C833117B4C08A41CD4ED /* CDVCamera.m */; };
+		7A7AE2599AEE411296C37610 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D74B771D2489D8E45CB22 /* CDVJpegHeaderWriter.m */; };
+		A8C8E18D0AA744F2BAFDBB21 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B5CBACE8D3477599777D31 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		37871546F091460F86599D2E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE426571885476BAB97A9A5 /* CoreLocation.framework */; };
+		D7F05B7CE0EF4F4287529EE4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC9675E723C4C9C9247F9E0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +69,20 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "EducationLMcordova/config.xml"; sourceTree = "<group>"; };
-		61563F04B3B6461AAEFCB8C3 /* FirebaseAuthenticationPlugin.m */ = {isa = PBXFileReference; name = "FirebaseAuthenticationPlugin.m"; path = "cordova-plugin-firebase-authentication/FirebaseAuthenticationPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		8A56EA3E60124AF9BBADC7AE /* FirebaseAuthenticationPlugin.h */ = {isa = PBXFileReference; name = "FirebaseAuthenticationPlugin.h"; path = "cordova-plugin-firebase-authentication/FirebaseAuthenticationPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		075DB102185846DF89661772 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2A80D7AE3BE948C693BA24FB /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5757C28C379A4BB79BBE2F81 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		3CDAECE152444CA686E17E51 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DC70433A1A25483CB4A8030E /* UIImage+CropScaleOrientation.m */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.m"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		85D3C833117B4C08A41CD4ED /* CDVCamera.m */ = {isa = PBXFileReference; name = "CDVCamera.m"; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2F3D74B771D2489D8E45CB22 /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.m"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		86B2A4DF770D4B0186023DE8 /* UIImage+CropScaleOrientation.h */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.h"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4D9BC501EE1147B4A6201587 /* CDVCamera.h */ = {isa = PBXFileReference; name = "CDVCamera.h"; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4E1C497600D148C08622B75C /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.h"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		794A91E104A34EE3A8710811 /* CDVExif.h */ = {isa = PBXFileReference; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D8B5CBACE8D3477599777D31 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DFE426571885476BAB97A9A5 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		FFC9675E723C4C9C9247F9E0 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				E8D7B754B95D44A8BE625FB8 /* AudioToolbox.framework in Frameworks */,
+				A8C8E18D0AA744F2BAFDBB21 /* ImageIO.framework in Frameworks */,
+				37871546F091460F86599D2E /* CoreLocation.framework in Frameworks */,
+				D7F05B7CE0EF4F4287529EE4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +157,7 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* EducationLMcordova-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				5757C28C379A4BB79BBE2F81 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "EducationLMcordova/Resources";
@@ -141,6 +166,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CDAECE152444CA686E17E51 /* AudioToolbox.framework */,
+				D8B5CBACE8D3477599777D31 /* ImageIO.framework */,
+				DFE426571885476BAB97A9A5 /* CoreLocation.framework */,
+				FFC9675E723C4C9C9247F9E0 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,8 +196,15 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				61563F04B3B6461AAEFCB8C3 /* FirebaseAuthenticationPlugin.m */,
-				8A56EA3E60124AF9BBADC7AE /* FirebaseAuthenticationPlugin.h */,
+				075DB102185846DF89661772 /* CDVNotification.m */,
+				2A80D7AE3BE948C693BA24FB /* CDVNotification.h */,
+				DC70433A1A25483CB4A8030E /* UIImage+CropScaleOrientation.m */,
+				85D3C833117B4C08A41CD4ED /* CDVCamera.m */,
+				2F3D74B771D2489D8E45CB22 /* CDVJpegHeaderWriter.m */,
+				86B2A4DF770D4B0186023DE8 /* UIImage+CropScaleOrientation.h */,
+				4D9BC501EE1147B4A6201587 /* CDVCamera.h */,
+				4E1C497600D148C08622B75C /* CDVJpegHeaderWriter.h */,
+				794A91E104A34EE3A8710811 /* CDVExif.h */,
 			);
 			name = Plugins;
 			path = "EducationLMcordova/Plugins";
@@ -262,6 +298,7 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				DE30F637DB934185A90A2C71 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +330,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				F6C61A23B4A647EDB801683A /* FirebaseAuthenticationPlugin.m in Sources */,
+				825FF5EC8DBC46ADBA57D0DB /* CDVNotification.m in Sources */,
+				B55BA1560A554ABB8AFE83BC /* UIImage+CropScaleOrientation.m in Sources */,
+				C4C7E4940E4149B3A0E530FE /* CDVCamera.m in Sources */,
+				7A7AE2599AEE411296C37610 /* CDVJpegHeaderWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

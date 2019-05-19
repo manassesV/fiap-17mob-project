@@ -10,17 +10,12 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.educationlm.br"
     },
-    "cordova-plugin-firebase-authentication": {
-      "FIREBASE_AUTH_VERSION": "16.1.+",
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.educationlm.br"
+    },
+    "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.educationlm.br"
     }
   },
-  "dependent_plugins": {
-    "cordova-support-android-plugin": {
-      "PACKAGE_NAME": "com.educationlm.br"
-    },
-    "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.educationlm.br"
-    }
-  }
+  "dependent_plugins": {}
 }

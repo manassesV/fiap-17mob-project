@@ -13,7 +13,27 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"FirebaseAuthentication\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin\" /><param name=\"onload\" value=\"false\" /></feature>",
+              "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            }
+          ],
+          "application": [
+            {
+              "xml": "<provider android:authorities=\"${applicationId}.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"org.apache.cordova.camera.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/camera_provider_paths\" /></provider>",
               "count": 1
             }
           ]
@@ -25,32 +45,67 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.educationlm.br"
     },
-    "cordova-support-android-plugin": {
+    "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.educationlm.br"
     },
-    "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.educationlm.br"
-    },
-    "cordova-plugin-firebase-authentication": {
-      "FIREBASE_AUTH_VERSION": "16.1.+",
+    "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.educationlm.br"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-      "id": "cordova-plugin-firebase-authentication.FirebaseAuthentication",
-      "file": "plugins/cordova-plugin-firebase-authentication/www/FirebaseAuthentication.js",
-      "pluginId": "cordova-plugin-firebase-authentication",
+      "id": "cordova-plugin-dialogs.notification",
+      "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
       "merges": [
-        "cordova.plugins.firebase.auth"
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification_android",
+      "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.Camera",
+      "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "Camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverOptions",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverOptions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.camera",
+      "file": "plugins/cordova-plugin-camera/www/Camera.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "navigator.camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverHandle",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverHandle"
       ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.3",
-    "cordova-support-android-plugin": "1.0.1",
-    "cordova-support-google-services": "1.3.1",
-    "cordova-plugin-firebase-authentication": "1.1.2"
+    "cordova-plugin-dialogs": "2.0.1",
+    "cordova-plugin-camera": "4.0.3"
   }
 }

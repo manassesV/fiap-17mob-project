@@ -1,12 +1,5 @@
 {
     "declarations": {},
     "sources": {},
-    "libraries": {
-        "Firebase/Auth": {
-            "name": "Firebase/Auth",
-            "type": "podspec",
-            "spec": "~> 5.0",
-            "count": 1
-        }
-    }
+    "libraries": {}
 }
